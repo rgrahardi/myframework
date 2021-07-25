@@ -1,0 +1,131 @@
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.nav-brand {
+  padding: 0 1.5%;
+}
+
+.nav-menu {
+  padding: 0 1.5%;
+}
+
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-menu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-menu {
+    position: absolute;
+    width: 97%;
+    top: 135px;
+    background: #232d41;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    z-index: 5;
+  }
+  .nav-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-menu ul li a {
+    text-align: center;
+    color: white;
+    padding: 15px;
+  }
+}
+
+.nav-login {
+  padding: 0 1.5%;
+}
+
+.nav-login ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-login ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-login {
+    position: absolute;
+    width: 97%;
+    background: #696f7b;
+    top: 80px;
+    display: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 5;
+  }
+  .nav-login ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .nav-login ul li a {
+    text-align: center;
+    color: white;
+    padding: 15px;
+  }
+}
+
+.nav-icon {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-icon {
+    display: block;
+  }
+}
+
+#menucheck {
+  display: none;
+}
+
+#menucheck:checked ~ .nav-menu {
+  display: block;
+}
+
+#menucheck:checked ~ .nav-login {
+  display: block;
+}
+/*# sourceMappingURL=nav.css.map */

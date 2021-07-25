@@ -1,0 +1,47 @@
+// 12 Kolom
+// Space 30px
+// Width 1000px
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+   
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="col"]{
+    margin: 10px ((30/1000)*100%)/2;
+  
+}
+
+@for $i from 1 through 12{
+    .col#{$i}{
+        width: (100%/(12/$i))-((30/1000)*100%);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    @for $i from 1 through 12{
+        .col#{$i}-md{
+            width: (100%/(12/$i))-((30/1000)*100%);
+        }
+    }
+    
+}
+@media screen and (max-width:480px) {
+    @for $i from 1 through 12{
+        .col#{$i}-xs{
+            width: (100%/(12/$i))-((30/1000)*100%);
+        }
+        .col#{$i}{
+            width: 100%;
+        }
+
+    }
+   
+    
+}

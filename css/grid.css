@@ -1,0 +1,180 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+[class^="col"] {
+  margin: 10px 1.5%;
+}
+
+.col1 {
+  width: 5.33333%;
+}
+
+.col2 {
+  width: 13.66667%;
+}
+
+.col3 {
+  width: 22%;
+}
+
+.col4 {
+  width: 30.33333%;
+}
+
+.col5 {
+  width: 38.66667%;
+}
+
+.col6 {
+  width: 47%;
+}
+
+.col7 {
+  width: 55.33333%;
+}
+
+.col8 {
+  width: 63.66667%;
+}
+
+.col9 {
+  width: 72%;
+}
+
+.col10 {
+  width: 80.33333%;
+}
+
+.col11 {
+  width: 88.66667%;
+}
+
+.col12 {
+  width: 97%;
+}
+
+@media screen and (max-width: 1024px) {
+  .col1-md {
+    width: 5.33333%;
+  }
+  .col2-md {
+    width: 13.66667%;
+  }
+  .col3-md {
+    width: 22%;
+  }
+  .col4-md {
+    width: 30.33333%;
+  }
+  .col5-md {
+    width: 38.66667%;
+  }
+  .col6-md {
+    width: 47%;
+  }
+  .col7-md {
+    width: 55.33333%;
+  }
+  .col8-md {
+    width: 63.66667%;
+  }
+  .col9-md {
+    width: 72%;
+  }
+  .col10-md {
+    width: 80.33333%;
+  }
+  .col11-md {
+    width: 88.66667%;
+  }
+  .col12-md {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col1-xs {
+    width: 5.33333%;
+  }
+  .col1 {
+    width: 100%;
+  }
+  .col2-xs {
+    width: 13.66667%;
+  }
+  .col2 {
+    width: 100%;
+  }
+  .col3-xs {
+    width: 22%;
+  }
+  .col3 {
+    width: 100%;
+  }
+  .col4-xs {
+    width: 30.33333%;
+  }
+  .col4 {
+    width: 100%;
+  }
+  .col5-xs {
+    width: 38.66667%;
+  }
+  .col5 {
+    width: 100%;
+  }
+  .col6-xs {
+    width: 47%;
+  }
+  .col6 {
+    width: 100%;
+  }
+  .col7-xs {
+    width: 55.33333%;
+  }
+  .col7 {
+    width: 100%;
+  }
+  .col8-xs {
+    width: 63.66667%;
+  }
+  .col8 {
+    width: 100%;
+  }
+  .col9-xs {
+    width: 72%;
+  }
+  .col9 {
+    width: 100%;
+  }
+  .col10-xs {
+    width: 80.33333%;
+  }
+  .col10 {
+    width: 100%;
+  }
+  .col11-xs {
+    width: 88.66667%;
+  }
+  .col11 {
+    width: 100%;
+  }
+  .col12-xs {
+    width: 97%;
+  }
+  .col12 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=grid.css.map */

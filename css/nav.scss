@@ -1,0 +1,106 @@
+.nav{
+    &-container{
+        max-width: 1100px;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &-brand{
+        padding: 0 1.5%;
+    }
+    &-menu{
+        padding: 0 1.5%;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li{
+                a{
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        @media screen and (max-width:1024px) {
+            position: absolute;
+            width: 97%;
+            top: 135px;
+            background: rgb(35, 45, 65);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: none;
+            z-index: 5;
+            ul{
+                flex-direction: column;
+                li{
+                    a{
+                        text-align: center;
+                        color: white;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &-login{
+        padding: 0 1.5%;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li{
+                a{
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        @media screen and (max-width:1024px) {
+            position: absolute;
+            width: 97%;
+            background: #696f7b;
+            top: 80px;
+            display: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            z-index: 5;
+            ul{
+                li{
+                    flex:1;
+                    a{
+                        text-align: center;
+                        color: white;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &-icon{
+        position: absolute;
+        right: 0;
+        display: none;
+        @media screen and (max-width:1024px) {
+            display: block;
+        }
+    }
+}
+#menucheck{
+    display: none;
+}
+
+#menucheck:checked ~ .nav-menu{
+    display: block;
+}
+#menucheck:checked ~ .nav-login{
+    display: block;
+}

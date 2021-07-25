@@ -1,0 +1,328 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+// button
+.btn{
+    background: black;
+    padding: 15px 30px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+// Hero
+.hero{
+    padding: 5% 0;
+}
+// slide
+.slider{
+    position: relative;
+    height: 600px;
+    @media screen and (max-width:1024px) {
+        height: 500px;
+    }
+    @media screen and (max-width:800px) {
+        height: 350px;
+    }
+    @media screen and (max-width:580px) {
+        height: 300px;
+    }
+    @media screen and (max-width:480px) {
+        height: 650px;
+    }
+   
+}
+.slide{
+    &1,&2,&3{
+        position: absolute;
+        height: 600px;
+        opacity: 0;
+        transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+        @media screen and (max-width:1024px) {
+
+        }
+    }
+    &-desc{
+        h2{
+            font-size: 3em;
+        }
+        p{
+            font-size: 16px;
+            line-height: 32px;
+            color: rgb(71, 71, 71);
+        }
+        @media screen and (max-width:1024px) {
+            h2{
+                font-size: 2em;
+            }
+        }
+        @media screen and (max-width:800px) {
+            h2{
+                line-height: 1em;
+            }
+            p{
+                display: none;
+            }
+        }
+        @media screen and (max-width:580px) {
+            h2{
+                line-height: 1.5em;
+            font-size: 1.4em;
+            }
+        }
+       
+    }
+}
+#slider1:checked ~ .slide1,
+#slider2:checked ~ .slide2,
+#slider3:checked ~ .slide3{
+    opacity: 1;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+.controller{
+    position: absolute;
+    bottom: 16%;
+    right: 1.5%;
+    z-index: 3;
+    @media screen and (max-width:480px) {
+        bottom: 60%;
+    background: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+    label{
+        display: inline-block;
+        opacity: 0.4;
+       
+    }
+}
+#slider1:checked ~ .controller label:nth-child(1) ,
+#slider2:checked ~ .controller label:nth-child(2) ,
+#slider3:checked ~ .controller label:nth-child(3) {
+    opacity: 1;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+#slider1,#slider2,#slider3{
+    display: none;
+}
+@media screen and (max-width:480px) {
+    .slide1 .row,.slide2 .row,.slide3 .row{
+        flex-wrap: wrap-reverse;
+    }
+    .slide-desc p{
+        display: block;
+    }
+}
+
+// Service
+.service{
+    padding: 5% 0;
+    &-title{
+        max-width: 500px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        h2{
+            font-size: 2em;
+            
+        }
+        p{
+            color: rgb(85, 85, 85);
+        }
+    }
+    &-item{
+        p{
+            color: rgb(107, 109, 124);
+        }
+    }
+}
+
+// Download
+.download {
+    padding: 5% 0;
+    h2{
+        font-size: 2em;
+    }
+    p{
+        color: rgb(107, 109, 124);
+        line-height: 32px;
+    }
+    @media screen and (max-width:480px) {
+        .row{
+            flex-wrap: wrap-reverse;
+        }
+    }
+}
+// contact
+.contact-us{
+    background: #f4fbff;
+    padding: 5% 0;
+}
+// Form
+.form{
+    &-group{
+        margin-bottom: 10px;
+        label{
+            display: block;
+        }
+    }
+    &-control{
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+        border: 1px solid #D5E2EB;
+        border-radius: 5px;
+    }
+}
+
+// pricing
+.pricing{
+    padding: 5% 0;
+    &-box{
+        
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 30px;
+            border-radius: 10px;
+            -webkit-box-shadow: 1px 1px 1px #eee;
+            box-shadow: 1px 1px 19px 6px #f7f6f6;
+
+            h1{
+                span{
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #808d95;
+                }
+            }
+            h2{
+                font-weight: 300;
+            }
+            p{
+                color: #808d95;
+            }
+       
+    }
+    &-list{
+        margin: 30px 0;
+        color: #808d95;
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 10px;
+                }
+            }
+          
+        }
+    }
+}
+
+// portfolio
+.portfolio{
+    background:#F7F8FB;
+    padding: 5% 0;
+    &-card{
+        background: white;
+        box-sizing: border-box;
+        &-title{
+            padding: 20px;
+            h3{
+                margin: 0;
+                padding: 0;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                font-size: 12px;
+                color: #808d95;
+            }
+        }
+    }
+}
+
+// Footer
+.footer{
+    padding: 5% 0;
+    background: #15181B;
+    color: white;
+    h3{
+        color: darkgoldenrod;
+    }
+    p{
+        line-height: 30px;
+        font-size: 14px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        a{
+            color:moccasin;
+            text-decoration: none;
+        }
+    }
+}
+
+// social
+.social{
+    display: flex;
+    li{
+        margin-right: 20px;
+        a:hover img{
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+// space
+.space-50{
+    content: "";
+    width: 100%;
+    height: 50px;
+}
+
+// image
+.img-responsive{
+    width: 100%;
+}
+.img-thumb{
+    width: 100px;
+    border-radius: 10px;
+    @media screen and (max-width:580px) {
+        width: 50px;
+    }
+}
+// Align
+.align-center{
+    text-align: center;
+}
+// divider
+.divider{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: cadetblue;
+}
+// color
+.bluesky{
+    background: rgb(237, 243, 255);
+}
+
+// icon
+.icon32{
+    height: 32px;
+}
